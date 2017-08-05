@@ -1,0 +1,28 @@
+body {
+    background-color: #ffcc66 !important;
+}
+
+h1{
+	text-align: center !important;
+		
+}
+
+li {
+  padding: 5px !important;
+  margin: 5px !important;
+  background: #faebd7 !important;
+}
+
+h2{
+	text-align: center !important;
+	font-style: italic !important;
+}
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+}
+
+.form-group {
+  margin-bottom: 5px !important;
+}
+

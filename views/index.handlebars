@@ -1,0 +1,68 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4">
+			<h1>Eat-Da-Burger</h1>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB_gI9GtqmNeMonbiT9CAtIbwh_O_-nxNyXgMO8ufp5ttMfaxnRA" class="img-responsive img-circle" alt="burger image">
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+	<div class="row">
+	  	<div class="col-md-4">
+	  		<h2>Burgers to be Devoured</h2>
+	  	</div>
+	  	<div class="col-md-4">
+	  		
+	  	</div>
+	  	<div class="col-md-4">
+  			<h2>Devoured Burgers</h2>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-md-4">
+	  		<ul class="list-unstyled list-group">
+				{{#each burgerlists}}
+					{{#unless this.devoured}}
+						<li class="list-group-item">
+							<div>{{this.id}}.{{this.burger_name}}</div>
+							{{!--Send Devoured command to the server--}}
+							<form class="form-inline" action="/{{this.id}}?_method=PUT" method="POST">
+								<input type="hidden" name="devoured" value="0">
+								<button class="btn btn-success" type="submit">Devour it!</button>
+							</form>
+						</li>
+					{{/unless}}
+				{{/each}}
+			</ul>
+		</div>
+		<div class="col-md-4"></div>
+		<div class="col-md-4">
+			<ul class="list-unstyled">
+				{{#each burgerlists}}
+					{{#if this.devoured}}
+						<li class="list-group-item list-group-item-success">
+							<p>{{this.id}}.{{this.burger_name}}</p>
+
+						</li>
+					{{/if}}
+				{{/each}}
+
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4">
+			<h2>Add a burger</h2>
+				<form class="create-update-form form-inline" action="/" method="POST">
+				  <div class="form-group">
+				    <!-- <label for="burgername">Burger:</label> -->
+				    <input type="text" class="form-control" id="burgername" name="burger_name">
+				  </div>  
+  				<button type="submit" class="btn btn-primary">Add burger</button>
+				</form>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+</div>
+

@@ -1,5 +1,5 @@
 {
-  "name": "burger",
+  "name": "sequelizedBurger",
   "version": "1.0.0",
   "description": "Eat-Da-Burger single page app",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michelleryan/Eat-Da-Burger.git"
+    "url": "git+https://github.com/michelleryan/sequelizedBurger.git"
   },
   "author": "Michelle Ryan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/michelleryan/Eat-Da-Burger/issues"
+    "url": "https://github.com/michelleryan/sequelizedBurger/issues"
   },
-  "homepage": "https://github.com/michelleryan/Eat-Da-Burger#readme",
+  "homepage": "https://github.com/michelleryan/sequelizedBurger#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3",

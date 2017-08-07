@@ -14,7 +14,13 @@
     "dialect": "mysql"
   },
   "production": {
-    "use_env_variable":"JawsDB_URL",
+    // "use_env_variable":"JawsDB_URL",
+    //hardcode to get heroku deployment to work
+    "username":"vrim5kvd9z2jb99f",
+    "password":"fsusstyzqijkuuaj",
+    "database":"w48ha863zrp84jet",
+    "host":"dyud5fa2qycz1o3v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",    
+    "use_env_variable":"mysql://vrim5kvd9z2jb99f:fsusstyzqijkuuaj@dyud5fa2qycz1o3v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/w48ha863zrp84jet",
     "dialect":"mysql"
   }
 }

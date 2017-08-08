@@ -14,6 +14,7 @@
     "dialect": "mysql"
   },
   "production": {
+
     "use_env_variable":"JAWSDB_URL",
     //hardcode to get heroku deployment to work
     // "username":"vrim5kvd9z2jb99f",
